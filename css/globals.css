@@ -12,7 +12,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  margin-top: 15rem;
+  margin-top: 10rem;
+  color: var(--text-color);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
 }
 
 ul {
@@ -24,30 +26,44 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--dark-secondary-color);
+  outline-offset: 2px;
+}
+
 h1 {
-  font-size: 6.4rem;
+  font-size: clamp(3.6rem, 4.5vw, 6rem);
   font-weight: 700;
+  line-height: 1.15;
   color: var(--primary-color);
 }
 
 .secondary-title {
-  font-size: 4rem;
+  font-size: clamp(3rem, 3.8vw, 4rem);
   font-weight: 700;
   color: var(--primary-color);
+  line-height: 1.2;
 }
 
 .tertiary-title {
-  font-size: 3.2rem;
-  font-weight: 500;
-  line-height: 4.5rem;
+  font-size: clamp(2.4rem, 3vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.35;
   color: var(--secondary-color);
 }
 
 p,
 .p {
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 3.5rem;
+  font-size: 1.7rem;
+  line-height: 1.8;
 }
 
 p:not(:last-of-type),
@@ -56,27 +72,38 @@ p:not(:last-of-type),
 }
 
 .btn {
-  background-color: none;
   border: none;
   outline: none;
-  padding: 1rem 4rem;
-  display: inline-block;
-  border-radius: 0.5rem;
+  padding: 1.2rem 2.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-0.2rem);
 }
 
 .btn.btn-primary {
   background-color: var(--dark-secondary-color);
   color: var(--white);
-  font-weight: 400;
-  font-size: 1.4rem;
+  box-shadow: 0 0.8rem 1.6rem rgba(37, 99, 235, 0.26);
+}
+
+.btn.btn-secondary {
+  background-color: transparent;
+  color: var(--dark-secondary-color);
+  border: 1px solid #bfdbfe;
 }
 
 .max-width {
   width: 100%;
   max-width: 120rem;
-  padding: 0 4rem;
-  margin: 0 auto;
-  margin-bottom: 26rem;
+  padding: 0 3rem;
+  margin: 0 auto 16rem;
 }
 
 .mb-0 {
@@ -99,16 +126,6 @@ p:not(:last-of-type),
   margin-bottom: 6rem;
 }
 
-@media only screen and (max-width: 1024px) {
-  html {
-    font-size: 60%;
-  }
-
-  h1 {
-    font-size: 6rem;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   html {
     font-size: 58%;
@@ -116,11 +133,10 @@ p:not(:last-of-type),
 
   .max-width {
     padding: 0 2rem;
+    margin-bottom: 10rem;
   }
-}
 
-@media only screen and (max-width: 425px) {
-  h1 {
-    font-size: 4.2rem;
+  body {
+    margin-top: 9rem;
   }
 }

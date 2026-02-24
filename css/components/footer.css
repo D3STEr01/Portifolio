@@ -1,11 +1,12 @@
 footer {
   background-color: var(--light-tertiary-color);
+  border-top: 1px solid #dbe3ef;
 }
 
 footer .footer__content {
   text-align: center;
-  padding: 6rem 2rem 1rem;
-  max-width: 47rem;
+  padding: 6rem 2rem 2rem;
+  max-width: 56rem;
 }
 
 footer .footer__content .footer__contact span {
@@ -20,6 +21,11 @@ footer .footer__content ul li {
 footer .footer__content ul a {
   display: inline-block;
   padding: 1rem;
+  border-radius: 999px;
+}
+
+footer .footer__content ul a:hover {
+  background: #e2e8f0;
 }
 
 footer .footer__content .footer__copyright {
