@@ -21,6 +21,11 @@ header .header__left .tag {
   padding: 0.8rem 1.4rem;
   border-radius: 999px;
   margin-bottom: 1.8rem;
+  transition: background-color 0.3s ease;
+}
+
+html[data-theme="dark"] header .header__left .tag {
+  background: rgba(37, 99, 235, 0.2);
 }
 
 header .header__left p {
@@ -51,6 +56,11 @@ header .header__right .header__image::after {
   right: -1.2rem;
   border-radius: 1.4rem;
   z-index: -1;
+  transition: border-color 0.3s ease;
+}
+
+html[data-theme="dark"] header .header__right .header__image::after {
+  border-color: rgba(147, 197, 253, 0.3);
 }
 
 header .header__right .header__image .Sandro {

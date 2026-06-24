@@ -11,7 +11,7 @@
 
 .projects ul li {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
 }
@@ -28,7 +28,8 @@
   border-radius: 1.6rem;
   overflow: hidden;
   box-shadow: var(--shadow);
-  flex: 1;
+  flex: 0 1 50rem;
+  transition: box-shadow 0.3s ease;
 }
 
 .projects ul li .image img {
@@ -40,7 +41,7 @@
 
 .projects ul li .projects__info {
   max-width: 48rem;
-  flex: 1;
+  flex: 0 1 auto;
 }
 
 .projects ul li .projects__info p {

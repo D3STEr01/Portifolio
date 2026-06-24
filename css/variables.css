@@ -13,3 +13,19 @@
 
   --font-family: 'DM Sans', sans-serif;
 }
+
+html[data-theme="dark"] {
+  --primary-color: #f8fafc;
+  --secondary-color: #e2e8f0;
+  --dark-secondary-color: #60a5fa;
+  --tertiary-color: #93c5fd;
+  --light-tertiary-color: #0b1220;
+  --text-color: #cbd5e1;
+  --surface-color: #1e293b;
+  --shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.3);
+  --bg-gradient: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+}
+
+html[data-theme="light"] {
+  --bg-gradient: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}

@@ -8,13 +8,15 @@
 
 html {
   font-size: 62.5%;
+  transition: background 0.3s ease;
 }
 
 body {
   font-size: 1.6rem;
   margin-top: 10rem;
   color: var(--text-color);
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  background: var(--bg-gradient);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 ul {
@@ -24,6 +26,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 img {
@@ -80,7 +83,7 @@ p:not(:last-of-type),
   justify-content: center;
   border-radius: 999px;
   font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn:hover {
@@ -97,6 +100,11 @@ p:not(:last-of-type),
   background-color: transparent;
   color: var(--dark-secondary-color);
   border: 1px solid #bfdbfe;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+html[data-theme="dark"] .btn.btn-secondary {
+  border-color: rgba(96, 165, 250, 0.3);
 }
 
 .max-width {

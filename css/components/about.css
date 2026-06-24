@@ -34,6 +34,11 @@
 
 .about .about__left ul li a:hover {
   background: #eff6ff;
+  transition: background-color 0.3s ease;
+}
+
+html[data-theme="dark"] .about .about__left ul li a:hover {
+  background: rgba(37, 99, 235, 0.2);
 }
 
 .about .about__right {

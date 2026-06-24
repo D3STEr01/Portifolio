@@ -25,8 +25,8 @@
     <!-- navbar -->
     <nav class="navbar">
       <div class="navbar__content max-width mb-0">
-        <a href="#header" aria-label="Voltar ao início">
-          <img src="assets/logo_nome.svg" alt="Logo Sandro Guedes" />
+        <a href="#header" aria-label="Voltar ao início" class="navbar__logo">
+          <img src="assets/sg.png" alt="Logo Sandro Guedes" />
         </a>
         <ul class="navbar__links">
           <li><a href="#header">Início</a></li>
@@ -35,6 +35,11 @@
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#footer">Contato</a></li>
         </ul>
+        <div class="navbar__theme">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
         <div class="navbar__mobile">
           <button class="burguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
             <img src="assets/menu.svg" alt="" aria-hidden="true" />
