@@ -1,17 +1,17 @@
 .projects {
-  margin-bottom: 16rem;
-  scroll-margin-top: 15rem;
+  margin-bottom: 14rem;
+  scroll-margin-top: 11rem;
 }
 
 .projects .projects__content {
   max-width: 56rem;
   text-align: center;
-  margin: 0 auto 6rem;
+  margin: 0 auto 5rem;
 }
 
 .projects ul li {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
 }
@@ -21,37 +21,53 @@
 }
 
 .projects ul li:not(:last-of-type) {
-  margin-bottom: 12rem;
+  margin-bottom: 9rem;
+}
+
+.projects ul li .image {
+  border-radius: 1.6rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  flex: 0 1 50rem;
+  transition: box-shadow 0.3s ease;
 }
 
 .projects ul li .image img {
   width: 100%;
-  min-width: 40rem;
-  max-width: 47rem;
+  min-width: 34rem;
+  max-width: 50rem;
   height: auto;
 }
 
 .projects ul li .projects__info {
-  max-width: 47rem;
+  max-width: 48rem;
+  flex: 0 1 auto;
 }
 
 .projects ul li .projects__info p {
-  margin: 1rem 0 4rem;
+  margin: 1rem 0 2.4rem;
 }
 
 .projects ul li .projects__info a {
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--dark-secondary-color);
   text-decoration: underline;
+}
+
+.projects ul li .projects__info a:hover {
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 768px) {
   .projects ul li,
   .projects ul li.projects__reversed-list {
     flex-direction: column;
+    gap: 2.4rem;
   }
 
   .projects ul li .projects__info {
     max-width: 66rem;
+    text-align: center;
   }
 
   .projects ul li .image img {

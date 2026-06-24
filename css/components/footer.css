@@ -1,11 +1,18 @@
 footer {
   background-color: var(--light-tertiary-color);
+  border-top: 1px solid #dbe3ef;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+html[data-theme="dark"] footer {
+  background-color: #0f172a;
+  border-top-color: rgba(71, 85, 105, 0.3);
 }
 
 footer .footer__content {
   text-align: center;
-  padding: 6rem 2rem 1rem;
-  max-width: 47rem;
+  padding: 6rem 2rem 2rem;
+  max-width: 56rem;
 }
 
 footer .footer__content .footer__contact span {
@@ -20,6 +27,15 @@ footer .footer__content ul li {
 footer .footer__content ul a {
   display: inline-block;
   padding: 1rem;
+  border-radius: 999px;
+}
+
+footer .footer__content ul a:hover {
+  background: #e2e8f0;
+}
+
+html[data-theme="dark"] footer .footer__content ul a:hover {
+  background: rgba(148, 163, 184, 0.2);
 }
 
 footer .footer__content .footer__copyright {

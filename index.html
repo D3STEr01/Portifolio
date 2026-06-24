@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Sandro Guedes, desenvolvedor full stack com foco em soluções web completas, modernas e escaláveis."
+    />
     <!-- title -->
     <title>Sandro Guedes</title>
     <!-- CSS -->
@@ -21,8 +25,8 @@
     <!-- navbar -->
     <nav class="navbar">
       <div class="navbar__content max-width mb-0">
-        <a href="/">
-          <img src="assets/logo_nome.svg" alt="" />
+        <a href="#header" aria-label="Voltar ao início" class="navbar__logo">
+          <img src="assets/sg.png" alt="Logo Sandro Guedes" />
         </a>
         <ul class="navbar__links">
           <li><a href="#header">Início</a></li>
@@ -31,9 +35,16 @@
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#footer">Contato</a></li>
         </ul>
+        <div class="navbar__theme">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
         <div class="navbar__mobile">
-          <img src="assets/menu.svg" alt="menu" class="burguer" />
-          <ul class="mobile__links">
+          <button class="burguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+            <img src="assets/menu.svg" alt="" aria-hidden="true" />
+          </button>
+          <ul class="mobile__links" id="mobile-menu">
             <li><a href="#header">Início</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#skills">Habilidades</a></li>
@@ -47,20 +58,24 @@
     <!-- header -->
     <header id="header" class="max-width">
       <div class="header__left">
-        <h1>Olá! Sou Sandro Guedes Desenvolvedor Front-end</h1>
+        <span class="tag">Disponível para novos projetos</span>
+        <h1>Olá! Sou Sandro Guedes, desenvolvedor full stack</h1>
         <p>
-          Desenvolvedor front-end com ampla experiência na criação 
-          de interfaces de usuário responsivas e atraentes. Sou 
-          apaixonado por projetar e desenvolver experiências 
-          online que encantam 
-          os usuários e atendem às necessidades do mundo real.
+          Desenvolvedor full stack com ampla experiência no desenvolvimento 
+          de soluções web completas, do front-end ao back-end. Sou 
+          apaixonado por criar aplicações robustas, escaláveis e que 
+          oferecem experiências excepcionais aos usuários e atendem 
+          às necessidades do mundo real.
         </p>
-        <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+        <div class="header__cta">
+          <a href="#about" class="btn btn-primary">Saiba mais</a>
+          <a href="#projects" class="btn btn-secondary">Ver projetos</a>
+        </div>
       </div>
       <div class="header__right">
         <div class="header__image">
           <img src="assets/sandro.png" alt="Sandro" class="Sandro" />
-          <img src="assets/abstract.svg" alt="background" class="background" />
+          <img src="assets/abstract.svg" alt="" class="background" aria-hidden="true" />
         </div>
       </div>
     </header>
@@ -75,22 +90,22 @@
         </p>
         <ul>
           <li>
-            <a href="https://www.instagram.com/sandrohenr1/" target="_blank"><img src="assets/instagram.svg" alt="Instagram" /></a>
+            <a href="https://www.instagram.com/sandrohenr1/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram.svg" alt="Instagram" /></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/sandro-guedes-567302214/" target="_blank"><img src="assets/linkedin.svg" alt="Linkedin"  /></a>
+            <a href="https://www.linkedin.com/in/sandro-guedes-567302214/" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.svg" alt="LinkedIn"  /></a>
           </li>
 
         </ul>
       </div>
       <div class="about__right">
         <h3 class="tertiary-title mb-m">
-          Desenvolvedor front-end apaixonado por tecnologia e soluções criativas
+          Desenvolvedor full stack apaixonado por tecnologia e soluções inovadoras
         </h3>
         <p>
-          Olá, eu sou Sandro Guedes, um desenvolvedor front-end apaixonado
-           por tecnologia e soluções criativas. Trabalho com diversas tecnologias
-            e frameworks para criar experiências envolventes que atendem às necessidades dos clientes.
+          Olá, eu sou Sandro Guedes, um desenvolvedor full stack apaixonado
+           por tecnologia e soluções inovadoras. Trabalho com diversas tecnologias
+            e frameworks para criar aplicações web completas que atendem às necessidades dos clientes.
         </p>
         <p>
           Eu amo o desafio de encontrar soluções inovadoras e criativas para
@@ -113,7 +128,7 @@
             <div class="image-container">
               <img src="assets/html.png" alt="Desenvolvimento Web" />
             </div>
-            <h3>Html</h3>
+            <h3>HTML</h3>
             <p>
               Linguagem de marcação para criar conteúdo web.
             </p>
@@ -122,7 +137,7 @@
             <div class="image-container">
               <img src="assets/Css.png" alt="Web Design" />
             </div>
-            <h3>Css</h3>
+            <h3>CSS</h3>
             <p>
               Estilização para design e layout de páginas web.
             </p>
@@ -149,7 +164,7 @@
             <div class="image-container">
               <img src="assets/icons8-mysql-36.png" alt="Gerenciamentos de versões" />
             </div>
-            <h3>MySql</h3>
+            <h3>MySQL</h3>
             <p>
               Sistema de gerenciamento de banco de dados relacional.
             </p>
@@ -158,7 +173,7 @@
             <div class="image-container">
               <img src="assets/icons8-php-36.png" alt="Gerenciamentos de versões" />
             </div>
-            <h3>Php</h3>
+            <h3>PHP</h3>
             <p>
               Linguagem de programação para desenvolvimento web.
             </p>
@@ -197,7 +212,7 @@
       <ul>
         <li>
           <div class="image">
-            <img src="assets/wm.png" alt="Gerenciamento de tarefas" />
+            <img src="assets/wm.png" alt="Projeto WebMarket" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
@@ -209,12 +224,12 @@
                Isso reflete a preferência crescente das pessoas por compras na internet em vez 
                de lojas físicas.
             </p>
-            <a href="https://github.com/D3STEr01/WebMarket" target="_blank">Leia mais &rarr;</a>
+            <a href="https://github.com/D3STEr01/WebMarket" target="_blank" rel="noopener noreferrer">Leia mais &rarr;</a>
           </div>
         </li>
         <li class="projects__reversed-list">
           <div class="image">
-            <img src="assets/contra.png" alt="ecommerce" />
+            <img src="assets/contra.png" alt="Projeto Contratool" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
@@ -224,12 +239,12 @@
               Uma aplicação web foi criada para tornar a vida dos corretores de imóveis mais fácil, 
               agilizando o processo de fechamento de negócios e protegendo os dados dos clientes e das propriedades.
             </p>
-            <a href="https://github.com/D3STEr01/Contratool" target="_blank">Leia mais &rarr;</a>
+            <a href="https://github.com/D3STEr01/Contratool" target="_blank" rel="noopener noreferrer">Leia mais &rarr;</a>
           </div>
         </li>
         <li>
           <div class="image">
-            <img src="assets/fc.png" alt="delivery" />
+            <img src="assets/fc.png" alt="Projeto FocusTask" />
           </div>
           <div class="projects__info">
             <h3 class="tertiary-title">
@@ -238,7 +253,7 @@
             <p>
               Este trabalho tem como objetivo desenvolver uma aplicação WEB e mobile para auxiliar estudantes na organização de sua vida acadêmica e pessoal.
             </p>
-            <a href="https://github.com/lisaguiar/tcc" target="_blank">Leia mais &rarr;</a>
+            <a href="https://github.com/lisaguiar/tcc" target="_blank" rel="noopener noreferrer">Leia mais &rarr;</a>
           </div>
         </li>
       </ul>
@@ -254,21 +269,20 @@
         </p>
         <div class="footer__contact mb-m">
           <span class="mb-m">sandroguedes_9@hotmail.com</span>
-          <span>12 99632-2662</span>
         </div>
         <ul class="mb-l">
           <li>
-            <a href="#" target="_blank"><img src="assets/instagram.svg" alt="Instagram" /></a>
+            <a href="https://www.instagram.com/sandroguedes01/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram.svg" alt="Instagram" /></a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="assets/linkedin.svg" alt="Linkedin" /></a>
+            <a href="https://www.linkedin.com/in/sandro-guedes-567302214/" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="assets/facebook.svg" alt="Facebook" /></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="assets/facebook.svg" alt="Facebook" /></a>
           </li>
         </ul>
         <p class="footer__copyright">
-          © 2023 Sandro Guedes. Todos os direitos reservados.
+          © 2026 Sandro Guedes. Todos os direitos reservados.
         </p>
       </div>
     </footer>
